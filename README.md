@@ -1,10 +1,10 @@
-# Client-Server Encrypted Communication 🔐
+# Client-Server Encrypted Communication 
 
 A multi-threaded distributed system built with Python Sockets and the Fernet (Symmetric Encryption) protocol. This project demonstrates secure data retrieval from multiple distributed servers, where numerical data is processed locally, encrypted before transmission, and aggregated at the client side.
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 The system implements a distributed data processing workflow:
 1. **Data Generation:** Random datasets are generated in Excel format to simulate distributed records.
@@ -14,14 +14,14 @@ The system implements a distributed data processing workflow:
 
 ---
 
-## 🛡️ Security Features
+## Security Features
 * **Symmetric Encryption:** Uses the `cryptography` library's Fernet implementation (AES-128 in CBC mode).
 * **End-to-End Protection:** Data is encrypted at the source (Server) and only decrypted at the destination (Client).
 * **Socket Security:** Demonstrates how to prevent raw data exposure during transit across a network.
 
 ---
 
-## 🛠️ Technical Stack
+## Technical Stack
 * **Language:** Python 3.x
 * **Environment:** Jupyter Notebook (`.ipynb`)
 * **Core Libraries:**
@@ -32,7 +32,7 @@ The system implements a distributed data processing workflow:
 
 ---
 
-## 🚀 Getting Started
+## Steps 
 
 ### 1. Requirements
 Ensure you have the following libraries installed:
@@ -50,7 +50,7 @@ Since the project is built into a single notebook, follow these steps within `PD
       * Spawn two background threads representing the distributed servers.
       * Initialize the client task to request, decrypt, and sum the data.
 
-## 📊 Results
+## Results
 Upon successful execution, the console will display:
 
 * The connection status of both servers.
@@ -61,7 +61,7 @@ Upon successful execution, the console will display:
 
 Note: The fernet_key.key must be present for the client to successfully decrypt server responses. If the key is regenerated, the servers must be restarted to use the updated key.
 
-## 📈 Future Enhancements
+## Future Enhancements
 * **Error Handling:** Adding timeouts for server responses.
 
 * **Network Expansion:** Moving servers to different physical or virtual machines (replacing localhost with actual IP addresses).
