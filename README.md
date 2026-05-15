@@ -38,13 +38,11 @@ The system implements a distributed data processing workflow:
 Ensure you have the following libraries installed:
 ```bash
 pip install pandas cryptography openpyxl
-
----
-
+```
 ### 2. Execution Flow
 Since the project is built into a single notebook, follow these steps within `PDCproject.ipynb`:
 
-1. **Data Prep:** Run the first cells to generate file1.xlsx, file2.xlsx, and the fernet_key.key.
+**1. Data Prep:** Run the first cells to generate file1.xlsx, file2.xlsx, and the fernet_key.key.
 
 **2. Server/Client Logic:** Execute the cells defining start_server and request_sum.
 
